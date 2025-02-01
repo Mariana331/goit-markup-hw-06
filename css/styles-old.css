@@ -65,11 +65,6 @@ img {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0;
   margin-right: 76px;
   padding: 24px 0;
 }
@@ -81,8 +76,6 @@ img {
 .header-link {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   gap: 40px;
 }
 
@@ -129,7 +122,7 @@ img {
 .contacts {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+  align-items: center;
 }
 
 .contact-link {
