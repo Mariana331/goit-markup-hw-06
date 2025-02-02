@@ -21,7 +21,7 @@
 
   <body>
     <!--------------------HEADER---------------------->
-    <header class="page-header">
+    <header class="hidden page-header">
       <div class="container one-header">
         <nav class="navigation">
           <a class="header-logo" href="./index.html"
@@ -58,10 +58,28 @@
         </button>
       </div>
 
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-close"></button>
-          <nav class="mobile-nav">Navigation</nav>
+          <button class="mobile-close">
+            <svg class="mobile-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-link">
+              <li class="mobile-nav-list">
+                <a class="mobile-link-li mobile-current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-list">
+                <a class="mobile-link-li" href="">Portfolio</a>
+              </li>
+              <li class="mobile-nav-list">
+                <a class="mobile-link-li" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
           <address class="mobile-contacts">
             <ul class="mobile-contact">
               <li class="mobile-list">
@@ -80,7 +98,7 @@
             <ul class="mobile-address-list">
               <li class="mobile-address-link">
                 <a href="" class="mobile-link-icon">
-                  <svg class="icon" width="23" height="24">
+                  <svg class="icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -101,7 +119,7 @@
               </li>
               <li class="mobile-address-link">
                 <a href="" class="mobile-link-icon">
-                  <svg class="icon" width="16" height="16">
+                  <svg class="icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -121,7 +139,7 @@
         </div>
       </section>
       <!-----------------two section------------------------->
-      <section class="hidden two-section">
+      <section class="two-section">
         <div class="container">
           <h2 class="visually-hidden">Tools</h2>
           <ul class="two-text">
