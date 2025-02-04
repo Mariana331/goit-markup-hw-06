@@ -425,6 +425,8 @@ button {
 .two-section {
   padding-top: 96px;
   padding-bottom: 96px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .visually-hidden {
