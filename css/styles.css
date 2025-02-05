@@ -45,6 +45,19 @@ button {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*-------------CONTAINER--------*/
 .container {
   width: 320px;
@@ -354,11 +367,23 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Dark-bg\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
   background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .one-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg\ 2.jpg);
+  }
 }
 
 .one-title {
@@ -399,6 +424,22 @@ button {
     max-width: 768px;
     padding-top: 112px;
     padding-bottom: 122px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg\ pl1.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .one-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg\ pl2.jpg);
+    }
   }
 
   .one-title {
@@ -414,6 +455,23 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office\ 1.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .one-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office\ 2.jpg);
+    }
   }
 
   .one-title {
@@ -427,19 +485,6 @@ button {
   padding-bottom: 96px;
   margin-right: 0;
   margin-left: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .two-text {
@@ -1099,6 +1144,8 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 
 .text-privacy {
@@ -1114,6 +1161,7 @@ button {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .link-checkbox {
